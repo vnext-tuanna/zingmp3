@@ -816,7 +816,6 @@ hr{
         display: grid;
         grid-template-columns: 90%;
     }
-
     .section__body-zingchart .chart{
         display: none;
     }
