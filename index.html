@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZingMP3 | Nghe nhạc tải nhạc chất lượng cao</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="public/images/logo.svg"/>
+</head>
+<body>
+       <div class="main-page" >
+           <div class="side-bar">
+               <nav class="navbar">
+                   <div class="navbar__logo">
+                       <img src="public/images/logo-mp3.png" alt="demo" width="50%" height="40%">
+                   </div>
+                   <img class="sub_logo" src="public/images/logo.svg" width="50%" height="50%" alt="demo">
+
+                   <ul class="navbar__menu menu__top">
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-collection-play"></i></i><span>Cá nhân</span></a>
+                       </li>
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-record-circle"></i><span>Khám phá</span></a>
+                       </li>
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-graph-up"></i><span>#zingchart</span></a>
+                       </li>
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-broadcast"></i><span>Radio <strong>Live</strong></span></a>
+                       </li>
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-card-heading"></i><span>Theo dõi</span></a>
+                       </li>
+                   </ul>
+                   <hr>
+                   <ul class="navbar__menu menu__bottom">
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-music-note-beamed"></i><span>Nhạc Mới</span></a>
+                       </li>
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-ui-checks-grid"></i><span>Thể loại</span></a>
+                       </li>
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-star"></i><span>Top 100</span></a>
+                       </li>
+                       <li class="menu__link">
+                           <a href=""><i class="bi bi-play-btn"></i><span>MV</span></a>
+                       </li>
+                       <div class="menu_suggestion">
+                           <div class="menu_suggestion--content">
+                               <p>Đăng nhập để khám phá những playlist dành riêng cho chính bạn.</p>
+                               <button>
+                                   <a href="">Đăng nhập</a>
+                               </button>
+                           </div>
+                       </div>
+                   </ul>
+               </nav>
+           </div>
+           <div class="main">
+               <header class="header">
+                   <div class="header__items">
+                       <div class="left">
+                           <ul class="items">
+                               <li class="list__items"><i class="bi bi-arrow-left"></i></li>
+                               <li  class="list__items"><i class="bi bi-arrow-right"></i></li>
+                               <form action="" class="form-search" autocomplete="on">
+                                   <div class="search-value">
+                                       <input type="text"  value="" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                                       <button type="submit"><i class="bi bi-search"></i></button>
+                                   </div>
+                               </form>
+                           </ul>
+                       </div>
+                       <div class="right">
+                           <ul class="items">
+                               <li  class="list__items">
+                                   <i><svg width="20" height="20" viewBox="0 0 20 20"><defs><linearGradient id="j32lhg93hd" x1="62.206%" x2="20.689%" y1="70.45%" y2="39.245%"><stop offset="10%" stop-color="#F81212"></stop><stop offset="100%" stop-color="red"></stop></linearGradient><linearGradient id="hjoavsus6g" x1="50%" x2="11.419%" y1="23.598%" y2="71.417%"><stop offset="0%" stop-color="#00F"></stop><stop offset="100%" stop-color="#0031FF"></stop></linearGradient><linearGradient id="la1y5u3dvi" x1="65.655%" x2="25.873%" y1="18.825%" y2="56.944%"><stop offset="0%" stop-color="#FFA600"></stop><stop offset="100%" stop-color="orange"></stop></linearGradient><linearGradient id="2dsmrlvdik" x1="24.964%" x2="63.407%" y1="8.849%" y2="55.625%"><stop offset="0%" stop-color="#13EFEC"></stop><stop offset="100%" stop-color="#00E8DF"></stop></linearGradient><filter id="4a7imk8mze" width="230%" height="230%" x="-65%" y="-65%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="301mo6jeah" width="312.7%" height="312.7%" x="-106.4%" y="-106.4%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="b2zvzgq7fj" width="295%" height="295%" x="-97.5%" y="-97.5%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="a1wq161tvl" width="256%" height="256%" x="-78%" y="-78%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><path id="qtpqrj1oda" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path><path id="jggzvnjgfc" d="M0 0H20V20H0z"></path><path id="2eiwxjmc7m" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path></defs><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><mask id="tinejqaasb" fill="#fff"><use xlink:href="#qtpqrj1oda"></use></mask><use fill="#FFF" fill-opacity="0" xlink:href="#qtpqrj1oda"></use><g mask="url(#tinejqaasb)"><g transform="translate(-2 -3)"><mask id="uf3ckvfvpf" fill="#fff"><use xlink:href="#jggzvnjgfc"></use></mask><use fill="#D8D8D8" xlink:href="#jggzvnjgfc"></use><circle cx="8.9" cy="6.8" r="9" fill="url(#j32lhg93hd)" filter="url(#4a7imk8mze)" mask="url(#uf3ckvfvpf)"></circle><circle cx="9.3" cy="13.7" r="5.5" fill="url(#hjoavsus6g)" filter="url(#301mo6jeah)" mask="url(#uf3ckvfvpf)"></circle><circle cx="15.9" cy="6.9" r="6" fill="url(#la1y5u3dvi)" filter="url(#b2zvzgq7fj)" mask="url(#uf3ckvfvpf)"></circle><circle cx="16.4" cy="17.7" r="7.5" fill="url(#2dsmrlvdik)" filter="url(#a1wq161tvl)" mask="url(#uf3ckvfvpf)"></circle></g></g><use fill="#FFF" fill-opacity="0.05" xlink:href="#2eiwxjmc7m"></use></g></svg>
+                                   </i>
+                                   <span>Chủ đề</span>
+                               </li>
+                               <li  class="list__items">
+                                   <i class="bi bi-upload"></i>
+                                   <span>Tải lên</span>
+                               </li>
+                               <li  class="list__items">
+                                   <i class="bi bi-gear"></i>
+                                   <span>Cài đặt</span>
+                               </li>
+                               <li  class="list__items">
+                                   <i class="bi bi-person-fill"></i>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </header>
+               <div class="content">
+                   <section class="section__top">
+                       <div class="section__top-items">
+                           <div class="top-item">
+                               <img src="public/images/banner1.jpeg" alt="" width="100%">
+                           </div>
+                           <div class="top-item">
+                               <img src="public/images/banner5.jpeg" alt="" width="100%">
+                           </div>
+                           <div class="top-item">
+                               <img src="public/images/banner3.jpeg" alt="" width="100%">
+                           </div>
+                           <div class="top-item">
+                               <img src="public/images/banner3.jpeg" alt="" width="100%">
+                           </div>
+                       </div>
+                   </section>
+                   <section class="section__body">
+                       <div class="section__heading">
+                           <h2> Lựa chọn hôm nay</h2>
+                           <span style="font-size: 20px"><i class="bi bi-chevron-right"></i></span>
+                       </div>
+                       <div class="section__body-items">
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Tắc kè hoa</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Màu sắc âm nhạc đa dạng của các nữ ca sĩ V-pop
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Rap Việt: Thế hệ trẻ</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Sự bùng nổ của Rap Việt thế hệ Gen Z
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Today's EDM Hit</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Alan Walker đang nóng trên sân chơi EDM
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>#trendnow</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>K-pop music</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>K-pop music</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>K-pop music</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+
+
+                       </div>
+
+                   </section>
+                   <section class="section__body xone">
+                       <div class="section__heading">
+                           <h2> XONE's CORNER</h2>
+                           <span style="font-size: 20px"><i class="bi bi-chevron-right"></i></span>
+                       </div>
+                       <div class="section__body-items">
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Tắc kè hoa</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Màu sắc âm nhạc đa dạng của các nữ ca sĩ V-pop
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Rap Việt: Thế hệ trẻ</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Sự bùng nổ của Rap Việt thế hệ Gen Z
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Today's EDM Hit</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Alan Walker đang nóng trên sân chơi EDM
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>#trendnow</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Asia Tune</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Nhạc cho người châu á
+                                   </div>
+                               </div>
+                           </div>
+
+
+                       </div>
+
+                   </section>
+                   <section class="section__body radio-feature">
+                       <div class="section__heading">
+                           <h2> Radio Nổi Bật<span style="font-size: 20px"><i class="bi bi-chevron-right"></i></span></h2>
+
+                       </div>
+                       <div class="section__body-items">
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Xone Radio</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       551 đang nghe
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Xone Radio</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       551 đang nghe
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Xone Radio</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       551 đang nghe
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Xone Radio</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       551 đang nghe
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Xone Radio</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       551 đang nghe
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Xone Radio</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       551 đang nghe
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Xone Radio</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       551 đang nghe
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                   </div>
+
+                               </div>
+
+
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Xone Radio</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       551 đang nghe
+                                   </div>
+                               </div>
+                           </div>
+
+                       </div>
+                   </section>
+                   <section class="section__body">
+                       <div class="section__heading">
+                           <h2> Nhạc mới mỗi ngày</h2>
+                           <span style="font-size: 20px"><i class="bi bi-chevron-right"></i></span>
+                       </div>
+                       <div class="section__body-items">
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Tắc kè hoa</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Màu sắc âm nhạc đa dạng của các nữ ca sĩ V-pop
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Rap Việt: Thế hệ trẻ</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Sự bùng nổ của Rap Việt thế hệ Gen Z
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Today's EDM Hit</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Alan Walker đang nóng trên sân chơi EDM
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>#trendnow</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>K-pop music</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+
+
+                       </div>
+
+                   </section>
+                   <section class="section__body upcoming">
+                       <div class="section__heading">
+                           <h2> Sắp diễn ra</h2>
+                       </div>
+                       <div class="section__body-items">
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                            <div class="image-figure">
+                                               <div class="figure-overlay">
+                                                   <span>Sự kiện</span>
+                                                   <h3>Sinh nhật Sao x Tuấn Hưng</h3>
+                                                   <p>00:00 Thứ 3, 05 tháng 10</p>
+                                               </div>
+                                            </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="footer-left">
+                                       <span>Lượt chúc mừng</span>
+                                       <div class="people">
+                                           <img src="public/images/radio.jpeg" alt="">
+                                           <img src="public/images/radio2.jpeg" alt="">
+                                           <img src="public/images/radio3.jpeg" alt="">
+                                           <img src="public/images/radio4.jpeg" alt="">
+
+                                       </div>
+                                   </div>
+
+                                   <div class="footer-right">
+                                       <a href="">Mở radio</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="image-figure">
+                                           <div class="figure-overlay">
+                                               <span>Sự kiện</span>
+                                               <h3>Sinh nhật Sao x Tuấn Hưng</h3>
+                                               <p>00:00 Thứ 3, 05 tháng 10</p>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="footer-left">
+                                       <span>Lượt chúc mừng</span>
+                                       <div class="people">
+                                           <img src="public/images/radio.jpeg" alt="">
+                                           <img src="public/images/radio2.jpeg" alt="">
+                                           <img src="public/images/radio3.jpeg" alt="">
+                                           <img src="public/images/radio4.jpeg" alt="">
+
+                                       </div>
+                                   </div>
+
+                                   <div class="footer-right">
+                                       <a href="">Mở radio</a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="image-figure">
+                                           <div class="figure-overlay">
+                                               <span>Sự kiện</span>
+                                               <h3>Sinh nhật Sao x Tuấn Hưng</h3>
+                                               <p>00:00 Thứ 3, 05 tháng 10</p>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="footer-left">
+                                       <span>Lượt chúc mừng</span>
+                                       <div class="people">
+                                           <img src="public/images/radio.jpeg" alt="">
+                                           <img src="public/images/radio2.jpeg" alt="">
+                                           <img src="public/images/radio3.jpeg" alt="">
+                                           <img src="public/images/radio4.jpeg" alt="">
+
+                                       </div>
+                                   </div>
+
+                                   <div class="footer-right">
+                                       <a href="">Mở radio</a>
+                                   </div>
+                               </div>
+                           </div>
+
+
+
+                       </div>
+                   </section>
+                   <section class="section__body-chart zingchart">
+                       <div class="zingchart-overlay">
+                           <div class="section__heading">
+                               <h2>#Zingchart <i class="bi bi-play-circle-fill"></i></h2>
+                           </div>
+                           <div class="section__body-zingchart">
+                               <div class="zingchart__list-items">
+                                   <div class="zingchart-rank">
+                                       <span>1</span>
+                                       <div class="rank-song">
+                                           <img src="public/images/xone2.jpeg" width="50px" height="50px" alt="">
+                                           <div class="song-name">
+                                               <p>Yêu Là Cưới</p>
+                                               <span>Phát Hồ, X2X</span>
+                                           </div>
+                                       </div>
+                                       <span>39%</span>
+                                   </div>
+                                   <div class="zingchart-rank">
+                                       <span>2</span>
+                                       <div class="rank-song">
+                                           <img src="public/images/xone4.jpeg" width="50px" height="50px" alt="">
+                                           <div class="song-name">
+                                               <p>Yêu Là Cưới</p>
+                                               <span>Phát Hồ, X2X</span>
+                                           </div>
+                                       </div>
+                                       <span>39%</span>
+                                   </div>
+                                   <div class="zingchart-rank">
+                                       <span>3</span>
+                                       <div class="rank-song">
+                                           <img src="public/images/xone5.jpeg" width="50px" height="50px" alt="">
+                                           <div class="song-name">
+                                               <p>Yêu Là Cưới</p>
+                                               <span>Phát Hồ, X2X</span>
+                                           </div>
+                                       </div>
+                                       <span>39%</span>
+                                   </div>
+
+                               </div>
+                               <div class="chart">
+                                   <table id="line-example-13" class="charts-css line multiple hide-data show-labels "><caption> Line Example #13 </caption> <thead><tr><th scope="col"> Year </th> <th scope="col"> Progress 1 </th> <th scope="col"> Progress 2 </th> <th scope="col"> Progress 3 </th></tr></thead> <tbody><tr><th scope="row"> 2000 </th> <td style="--start:0.1; --size:0.5;"><span class="data"> 50 </span></td> <td style="--start:0; --size:0.2;"><span class="data"> 20 </span></td> <td style="--start:0.2; --size:0.4;"><span class="data"> 40 </span></td></tr> <tr><th scope="row"> 2010 </th> <td style="--start:0.5; --size:0.8;"><span class="data"> 80 </span></td> <td style="--start:0.2; --size:0.5;"><span class="data"> 50 </span></td> <td style="--start:0.4; --size:0.1;"><span class="data"> 10 </span></td></tr> <tr><th scope="row"> 2020 </th> <td style="--start:0.8; --size:0.4;"><span class="data"> 40 </span></td> <td style="--start:0.5; --size:0.3;"><span class="data"> 30 </span></td> <td style="--start:0.1; --size:0.2;"><span class="data"> 20 </span></td></tr></tbody></table>
+                               </div>
+                           </div>
+                       </div>
+                    </section>
+                   <section class="section__body-country">
+                       <div class="section__country-items">
+                           <div class="item">
+                               <img src="public/images/zingchart.jpeg" alt="" width="100%">
+                           </div>
+                           <div class="item">
+                               <img src="public/images/zingchart2.jpeg" alt="" width="100%">
+                           </div>
+                           <div class="item">
+                               <img src="public/images/zingchart3.jpeg" alt="" width="100%">
+                           </div>
+                       </div>
+                   </section>
+                   <section class="section__body artist">
+
+                       <div class="section__body-items">
+
+                           <div class="body_item">
+                               <img src="public/images/artist1.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/artist3.png" width="100%" alt="">
+
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/artist4.png" width="100%" alt="">
+
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/artist2.png" width="100%" alt="">
+
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/artist5.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/artist1.png" width="100%" alt="">
+
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/artist3.png" width="100%" alt="">
+                           </div>
+
+
+                       </div>
+
+                   </section>
+                   <section class="section__body top">
+                       <div class="section__heading">
+                           <h2> Top 100</h2>
+                           <span style="font-size: 20px"><i class="bi bi-chevron-right"></i></span>
+                       </div>
+                       <div class="section__body-items">
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Tắc kè hoa</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Màu sắc âm nhạc đa dạng của các nữ ca sĩ V-pop
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Rap Việt: Thế hệ trẻ</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Sự bùng nổ của Rap Việt thế hệ Gen Z
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>Today's EDM Hit</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Alan Walker đang nóng trên sân chơi EDM
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>#trendnow</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-suit-heart"></i></span>
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                           <span><i class="bi bi-three-dots"></i></span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="body_item-footer">
+                                   <div class="body_item-title">
+                                       <h3>K-pop music</h3>
+                                   </div>
+                                   <div class="body_item-subtitle">
+                                       Bắt trend cùng trào lưu âm nhạc
+                                   </div>
+                               </div>
+                           </div>
+
+
+                       </div>
+
+                   </section>
+                   <section class="section__body zing-choice">
+                       <div class="section__heading">
+                           <h2> Nghệ Sĩ Zing Choice</h2>
+                           <span style="font-size: 20px"><i class="bi bi-chevron-right"></i></span>
+                       </div>
+                       <div class="section__body-items">
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                       <div class="item-gallery" >
+                                           <img src="public/images/hs1.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/hs2.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/hs3.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/hs4.png" width="50px" height="50px" alt="">
+                                       </div>
+
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                       <div class="item-gallery">
+                                           <img src="public/images/gall.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/gall2.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/gall3.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/gall4.jpeg" width="50px" height="50px" alt="">
+
+                                       </div>
+
+                                        </div>
+                               </div>
+                           </div>
+
+                           <div class="body_item">
+                               <div class="body_item-top">
+                                   <div class="body_item-image">
+                                       <div class="body_item-overlay">
+                                           <span><i class="bi bi-play-circle"></i></span>
+                                       </div>
+                                       <div class="item-gallery">
+                                           <img src="public/images/jt1.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/jt3.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/jt4.jpeg" width="50px" height="50px" alt="">
+                                           <img src="public/images/jt5.jpeg" width="50px" height="50px" alt="">
+
+                                       </div>
+                                    </div>
+                               </div>
+
+                           </div>
+
+
+                       </div>
+
+                   </section>
+                   <section class="section__body partner">
+                       <div class="section__heading">
+                           <h3> Đối tác âm nhạc</h3>
+                       </div>
+                       <div class="section__body-items">
+                           <div class="body_item">
+                               <img src="public/images/parner3.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/partner4.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/partner5.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/partner.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/partner6.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/partner2.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/patner8.png" width="100%" alt="">
+                           </div>
+                           <div class="body_item">
+                               <img src="public/images/partner7.png" width="100%" alt="">
+                           </div>
+
+
+                       </div>
+
+                   </section>
+
+
+               </div>
+           </div>
+           <div class="side-bar-right">
+               <div class="header-right">
+                   <div class="radio-check">
+                       <input type="radio" id="radio-playlist" name="play" value="playlist" checked>
+                       <label for="radio-playlist">Danh sách phát</label>
+
+                       <input type="radio" id="radio-recent" name="play" value="recent">
+                       <label for="radio-recent">Nghe gần đây</label>
+                   </div>
+                   <div class="set-time">
+                       <span><i class="bi bi-stopwatch"></i></span>
+                        <span><i class="bi bi-three-dots"></i></span>
+                   </div>
+               </div>
+               <div class="body_right">
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                    <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                    </div>
+                                   <div class="title">
+                                       <p>Speechless</p>
+                                       <span>Acott</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div id="recentList" class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Ghen Erik</p>
+                                       <span>Erik,Khắc Hưng</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Ghen</p>
+                                       <span>Erik,Khắc Hưng</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Speechless</p>
+                                       <span>Acott</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Ghen</p>
+                                       <span>Erik,Khắc Hưng</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Speechless</p>
+                                       <span>Acott</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Ghen</p>
+                                       <span>Erik,Khắc Hưng</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Speechless</p>
+                                       <span>Acott</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Ghen</p>
+                                       <span>Erik,Khắc Hưng</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="playlist-items">
+                       <div class="item">
+                           <div class="item-left">
+                               <div class="song">
+                                   <div class="img">
+                                       <div class="img-overlay">
+                                           <span><i class="bi bi-play"></i></span>
+                                       </div>
+                                   </div>
+                                   <div class="title">
+                                       <p>Ghen</p>
+                                       <span>Erik,Khắc Hưng</span>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="item-right">
+                           <span>
+                               <span><i class="bi bi-suit-heart"></i></span>
+                               <span><i class="bi bi-three-dots"></i></span>
+                           </span>
+                           </div>
+                       </div>
+                   </div>
+
+
+               </div>
+
+           </div>
+       </div>
+
+</body>
+</html>
